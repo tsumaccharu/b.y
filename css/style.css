@@ -1,5 +1,6 @@
 body {
     background-color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .material-symbols-outlined {
@@ -88,29 +89,22 @@ h2 {
     font-weight: bold;
     padding: 60px 0;
 }
-
 .service {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 0 5vw 80px;
 }
 
 .service-card {
-    width: 350px;
+    width: auto;
     min-height: 220px;
     padding: 24px;
-
     border-radius: 16px;
-
     background: #fff;
-
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-
     transition: 0.3s;
 }
-
 .service-card:hover {
     transform: translateY(-5px);
 }
